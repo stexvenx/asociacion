@@ -31,7 +31,7 @@ public class Lector {
         this.cedula = cedula;
     }
 public void tomarPrestado(Libro libro) {
-        if (librooActual != null) {
+        if (libroActual != null) {
     System.out.println(nombre + " ya tiene el libro \"" + libroActual.getTitulo() + "\".");
            
         } else {
@@ -49,6 +49,10 @@ public void tomarPrestado(Libro libro) {
         } else {
             System.out.println(nombre + " no tiene ningún libro prestado para devolver.");
         }
+    }
+    public void mostrarEstado(){
+        String estado = (libroActual != null) ?  libroActual.getTitulo() : "sin libro";
+        System.out.println("lector " + nombre + " tiene el libro: " + estado);
     }
 }
     
