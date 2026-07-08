@@ -35,8 +35,8 @@ public void tomarPrestado(Libro libro) {
     System.out.println(nombre + " ya tiene el libro \"" + libroActual.getTitulo() + "\".");
            
         } else {
-            if (libro.Prestar()) {
-                this.LibroActual = libro;
+            if (libro.prestar()) {
+                this.libroActual = libro;
             }
         }
     }
